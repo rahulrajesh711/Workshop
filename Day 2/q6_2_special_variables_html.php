@@ -18,14 +18,36 @@
 
 </html>
 <?php
-$sub1=$sub2=$sub3=$sub4=$sub5=0;
-$name=$_POST['name'];
-$sub1=$_POST['sub1'];
-$sub2=$_POST['sub2'];
-$sub3=$_POST['sub3'];
-$sub4=$_POST['sub4'];
-$sub5=$_POST['sub5'];
-
+global $name;
+global $sub1;
+global $sub2;
+global $sub3;
+global $sub4;
+global $sub5;
+if(isset($_POST['name']))
+{
+    $name=$_POST['name'];
+}
+if(isset($_POST['sub1']))
+{
+    $sub1=$_POST['sub1'];
+}
+if(isset($_POST['sub2']))
+{
+    $sub2=$_POST['sub2'];
+}
+if(isset($_POST['sub3']))
+{
+    $sub3=$_POST['sub3'];
+}
+if(isset($_POST['sub4']))
+{
+    $sub4=$_POST['sub4'];
+}
+if(isset($_POST['sub5']))
+{
+    $sub5=$_POST['sub5'];
+}
 
 if($sub5!=0)
 {

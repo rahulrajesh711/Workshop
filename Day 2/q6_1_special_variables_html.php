@@ -12,10 +12,22 @@
 </html>
 
 <?php
-$side1=$_GET['side1'];
-$side2=$_GET['side2'];
-$side3=$_GET['side3'];
-if($side3&&$side2&&$side1)
+global $side1;
+global $side2;
+global $side3;
+if(isset($_GET['side1']))
+{
+    $side1=$_GET['side1'];
+}
+if(isset($_GET['side2']))
+{
+    $side2=$_GET['side2'];
+}
+if(isset($_GET['side3']))
+{
+    $side3=$_GET['side3'];
+}
+if($side3)
 {
         if($side1==$side2&&$side2==$side3)
         {
@@ -34,8 +46,4 @@ if($side3&&$side2&&$side1)
             echo "<br>Its an Scalene Triangle";
         }
 }
-else
-    echo "<br><br>Enter  Values of Sides of a Triangle";
-
-
 ?>
